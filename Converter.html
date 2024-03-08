@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="Converter.css">
+</head>
+<body>
+    <div>
+    <h2>Temperature Converter</h2>
+    <label for="">celsius</label>
+    <input type="text" id="celsius" value="" style="text-align: center;" oninput="fahrenheit.value=(celsius.value*9/5)+32">
+    <h2 style="display: inline;">=</h2>
+    <label for="">fahrenheit</label>
+    <input type="text" id="fahrenheit" value="" style="text-align: center;" oninput="celsius.value=(fahrenheit.value-32)*5/9"> 
+    </div>
+    <hr >
+    <div>
+        <h2>Speed Converter</h2>
+        <label for="">Kilometeres per hour</label>
+        <input type="text" id="kilometer" value="" style="text-align: center;" oninput="miles.value=kilometer.value*1.6">
+        <h2 style="display: inline;">=</h2>
+        <label for="">miles per hour</label>
+        <input type="text" id="miles" value="" style="text-align: center;" oninput="kilometer.value=miles.value/1.6"> 
+        </div>
+        <hr>
+        <div>
+            <h2>length converter</h2>
+            <label for="">centimetere</label>
+            <input type="text" id="cm" value="0" style="text-align: center;" oninput="m.value=cm.value/10">
+            <h2 style="display: inline;">=</h2>
+            <label for="">meter</label>
+            <input type="text" id="m" value="0" style="text-align: center;" oninput="cm.value=m.value*10"> 
+            </div>
+            <hr>
+</body>
+</html>
